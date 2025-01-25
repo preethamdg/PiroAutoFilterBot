@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '2089142494'))
+API_HASH = environ.get('API_HASH', '66a87d259426e268bdd765fb4c635f2b@cluster0.06nox.mongodb.net/')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = environ.get("PORT", "8080")
 
@@ -51,15 +51,15 @@ SUPPORT_CHAT_ID = -1001792675255
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sanjanadgpreethamdg:Sanju@cluster0.06nox.mongodb.net/")
+DATABASE_NAME = environ.get('DATABASE_NAME', "sanjanadgpreethamdg")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files_store')
 
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002470010762'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'raixchat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
